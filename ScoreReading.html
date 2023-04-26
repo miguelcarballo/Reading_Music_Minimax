@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScoreReading Training</title>
+    <link rel="stylesheet" href="Treant.css" type="text/css"/>
+    <style>
+        .center {
+          margin: auto;
+          width: 20%;
+          height: 200px;
+          border: 3px solid #73AD21;
+          padding: 10px;
+        }
+        
+
+        button, input[type="button"], input[type="submit"] { 
+            color:#050; 
+            font: bold 84% 'trebuchet ms',helvetica,sans-serif; 
+           
+            border:1px solid; 
+            width: 100%;
+            height: 20%;
+            border-color: #696 #363 #363 #696; 
+        } 
+    </style>
+</head>
+<body>
+    <p id="demo"></p>
+    <div id="info">  
+        <p id="txtLevel"></p>
+        <p id="txtPoints"></p>
+    </div>
+    <div id="score_div" class="center">
+        <button id="btnStart" type="button" onclick="startGame()">Start</button>
+    </div>
+    <div id="button_div" class="center"></div>
+   
+    <div id="tree-simple" style="width:15000px; height: 1000px"> </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vexflow/build/cjs/vexflow.js"></script>
+    <script src="vendor/raphael.js"></script>
+    <script src="Treant.js"></script>
+    <script src="algorithm.js"></script>
+    <script src="score_reading.js"></script>
+    <script>
+
+        function startGame(){
+            var game = new Game();
+            game.start_game();
+        }
+        //--------
+      
+       
+
+
+
+
+        //-------------
+        
+       
+
+
+    </script>
+    
+</body>
+</html>
